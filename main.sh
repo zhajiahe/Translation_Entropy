@@ -8,9 +8,9 @@ CORPUS_A=$1
 CORPUS_B=$2
 
 echo "Computing translation entropy ~~~"
-
-past -d '·' CORPUS_A CORPUS_B > tmp
-sed -i 's/·/ ||| /g' tmp
+echo "$CORPUS_A and $CORPUS_B"
+paste -d '`' $CORPUS_A $CORPUS_B > tmp
+sed -i 's/`/ ||| /g' tmp
 
 $fast getvocab CORPUS_A > vocab_src
 $fast getvocab CORPUS_B > vocab_tgt
