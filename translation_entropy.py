@@ -29,24 +29,27 @@ def translation_entropy(vocab_a, vocab_b, align, text_a, text_b):
     with open(align,'r') as f:
         lines = f.readlines()
         Alignment = [line.strip().split() for line in lines]
-    with open(text, 'r') as f:
+    with open(text_a, 'r') as f:
         lines = f.readlines()
         for line in lines:
-            s = line.strip().split(' ||| ')
-            text_A.append(s[0].split())
-            text_B.append(s[1].split())
+            text_A.append(line.strip().split())
+    with open(text_b, 'r') as f:
+        lines = f.readlines()
+        for line in lines:
+            text_B.append(line.strip().split())
     """PROCESS"""
     for i, line in enumerate(Alignment):
         for st in line:
             s, t = st.split('-')
-            s_token = text_A[i][int(s)]
-            t_token = text_B[i][int(t)]
+            try:
+                s_token = text_A[i][int(s)]
+                t_token = text_B[i][int(t)]
+            except:
+                ipdb.set_trace()
             if s_token not in vocab_A:
                 continue
             if t_token not in vocab_B:
                 continue
-            # s_index = vocab_A[s_token]
-            # t_index = vocab_B[t_token]
             try:
                 Dict[s_token][t_token] += 1
             except:
