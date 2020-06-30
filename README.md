@@ -11,11 +11,11 @@
 ## Example
 corpus_en:
 
-`this will be the only way to promote paren@@ tho@@ od with shared responsibilities .
+this will be the only way to promote paren@@ tho@@ od with shared responsibilities .
 in my opinion , this debate goes in the right direction .
 at a time when states , local communities , taxpayers and businesses are accepting financial sacrifices , the union cannot exempt itself from this virtu@@ ous process .
 firstly , the agreement reached on a regulation on credit @-@ rating agencies will help address one of the problems that contributed to this crisis and thus will offer some prospect of restoring market confidence .
-the different legislation of the individual provinces is an additional problematic aspect .`
+the different legislation of the individual provinces is an additional problematic aspect .
 
 corpus_ro:
 
@@ -28,8 +28,8 @@ legislatia diferita a provinci@@ ilor individuale este un aspect problematic sup
 `bash main.sh corpus_en corpus_ro`
 
 trans_entropy.en:
-
-`the 5.698906254414691
+(```)
+the 5.698906254414691
 , 1.444006961962339
 . 0.09609516628672199
 of 3.2255480079422636
@@ -38,6 +38,7 @@ and 1.0304466601300641
 in 1.7478318554051528
 a 2.4863726398605657
 that 2.176085465470134
-is 1.9418089845412654`
+is 1.9418089845412654
+(```)
 ### 统计文本中某字符串出现次数
 `awk -v RS="@#$j" '{print gsub(/targetStr/,"&")}' filename`
