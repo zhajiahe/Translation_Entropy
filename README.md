@@ -12,7 +12,7 @@
 
 `bash main.sh corpus_en corpus_ro`
 
-tran_entropy_en:  
+trans_entropy_en:  
 ```
 the 5.698906254414691
 , 1.444006961962339
@@ -25,7 +25,7 @@ a 2.4863726398605657
 that 2.176085465470134
 is 1.9418089845412654
 ```
-trans)entropy_ro:  
+trans_entropy_ro:  
 ```
 , 1.8205278972537513
 de 4.262196692574352
