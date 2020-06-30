@@ -70,7 +70,7 @@ def Cal_entropy(freqs):
     return ent
 
 
-translation_entropy(vocab_a, vocab_b, align, text)
+translation_entropy(vocab_a, vocab_b, align, text_a, text_b)
 
 
     
