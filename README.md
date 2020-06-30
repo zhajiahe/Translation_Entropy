@@ -1,9 +1,18 @@
 # Translation_Entropy
+<<<<<<< HEAD
 ## Requirements
 fast_BPE: get vocab of paralell corpus
 fast_align: library of unsupervised alignment
 ## Usage
 bash main.sh corpus_a corpus_b
+=======
+## requirements
+[fast_BPE](https://github.com/glample/fastBPE): get vocab of paralell corpus
+
+[fast_align](https://github.com/clab/fast_align): library of unsupervised alignment
+## usage
+`bash main.sh corpus_a corpus_b`
+>>>>>>> d2fd6b969b6af138c00dfa32818b617e08bfd24b
 - corpus_a : sentences of language a
 - corpus_b : sentences of language b
 ## Example
