@@ -7,7 +7,7 @@ from math import log
 from collections import OrderedDict
 vocab_a, vocab_b,align, text_a, text_b = sys.argv[1:]
 Lang = text_a[-2:]
-def translation_entropy(vocab_a, vocab_b, align, text):
+def translation_entropy(vocab_a, vocab_b, align, text_a, text_b):
     vocab_A = {}
     vocab_B = {}
     Alignment = None
